@@ -8,7 +8,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
  * Created by Jayson on 8/31/2017.
  * Class used to initialize the Retrofit instance and provide methods to build and start requests
  */
-class RestAPI() {
+class RestApi() {
 
     private val redditApi: RedditApi
 
