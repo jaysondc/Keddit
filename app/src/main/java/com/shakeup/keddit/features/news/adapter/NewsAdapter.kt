@@ -38,9 +38,7 @@ class NewsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         delegateAdapters.get(getItemViewType(position)).onBindViewHolder(holder, this.items[position])
     }
 
-    override fun getItemViewType(position: Int): Int {
-        return this.items[position].getViewType()
-    }
+    override fun getItemViewType(position: Int): Int = items[position].getViewType()
 
     fun addNews(news: List<RedditNewsItem>) {
         // first remove loading and notify
